@@ -70,6 +70,9 @@ ruleTester.run('jsx-no-undef', rule, {
       allowGlobals: false
     }],
     parser: 'babel-eslint'
+  }, {
+    code: '<>Foo</>',
+    parser: 'babel-eslint'
   }],
   invalid: [{
     code: '/*eslint no-undef:1*/ var React; React.render(<App />);',

@@ -56,6 +56,9 @@ ruleTester.run('jsx-pascal-case', rule, {
   }, {
     code: '<IGNORED />',
     options: [{ignore: ['IGNORED']}]
+  }, {
+    code: '<></>',
+    parser: 'babel-eslint'
   }],
 
   invalid: [{
